@@ -359,7 +359,7 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
               {step >= 0 && (
                 <motion.span
                   layout
-                  className="text-6xl font-bold bg-gradient-to-r from-white via-gray-100 to-gray-300 bg-clip-text text-transparent cursor-default relative"
+                  className="text-6xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 via-cyan-400 to-blue-500 bg-clip-text text-transparent cursor-default relative"
                   initial={{ opacity: 0, scale: 0.5, rotateX: -90, filter: "blur(10px)" }}
                   animate={{
                     opacity: 1,
@@ -397,7 +397,7 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
               {step >= 1 && (
                 <motion.span
                   layout
-                  className="text-6xl font-bold bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-300 bg-clip-text text-transparent cursor-default relative"
+                  className="text-6xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 via-cyan-400 to-blue-500 bg-clip-text text-transparent cursor-default relative"
                   initial={{ opacity: 0, scale: 0.5, rotateY: 90, filter: "blur(10px)" }}
                   animate={{
                     opacity: 1,
@@ -642,38 +642,19 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
             }}
           />
 
-          <motion.div variants={item} initial="hidden" animate="show" className="mb-8">
+          {/* <motion.div variants={item} initial="hidden" className="mb-8">
             <motion.img
               src="/logo.png"
               alt="WēSIBL Logo"
-              width={200}
-              height={200}
-              animate={{
-                rotateY: [0, 360],
-                filter: [
-                  "drop-shadow(0 0 20px rgba(236,72,153,0.3))",
-                  "drop-shadow(0 0 40px rgba(168,85,247,0.5))",
-                  "drop-shadow(0 0 20px rgba(236,72,153,0.3))",
-                ],
-              }}
-              transition={{
-                rotateY: {
-                  duration: 4,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                  repeatDelay: 1,
-                },
-                filter: {
-                  duration: 3,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                },
-              }}
+              width={150}
+              height={150}
+              
+              
               style={{
                 transformStyle: "preserve-3d",
               }}
             />
-          </motion.div>
+          </motion.div> */}
 
 
           {/* Heading */}
@@ -681,14 +662,19 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
             variants={item}
             initial="hidden"
             animate="show"
-            className="text-center space-y-4"
+            className="text-center space-y-8"
           >
-            <h1 className="text-3xl md:text-5xl font-light tracking-[0.3em] text-gray-400">
-              WELCOME TO
+            {/* Logo - Mountain with water waves */}
+            <div className="flex justify-center mb-8">
+              <img src="/logo.png" alt="WēSIBL Logo" className="w-32 h-32" />
+            </div>
+
+            <h1 className="text-4xl md:text-6xl font-light text-white">
+              Welcome to
             </h1>
 
             <motion.h1
-              className="text-6xl md:text-8xl font-bold"
+              className="text-5xl md:text-8xl font-light"
               animate={{
                 backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
               }}
@@ -707,9 +693,8 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
               </span>
               <span className="text-white">SIBL WORLD</span>
             </motion.h1>
-
-
           </motion.div>
+
 
           <div className="flex justify-center mt-12">
             <motion.button
@@ -774,7 +759,7 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
                 />
 
                 {/* Button text */}
-                <span className="relative z-10 flex items-center gap-3">
+                <button className="relative z-10 flex items-center gap-3 rounded-full">
                   Start the Experience
                   <motion.svg
                     className="w-5 h-5"
@@ -797,7 +782,7 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
                       d="M13 7l5 5m0 0l-5 5m5-5H6"
                     />
                   </motion.svg>
-                </span>
+                </button>
               </div>
             </motion.button>
           </div>
