@@ -13,7 +13,7 @@ export default function Navbar() {
   useEffect(() => {
     // Initialize sound
     const enterSfx = new Howl({
-      src: ["/sounds/track.mp3"],
+      src: ["/sounds/tracknew.mp3"],
       volume: 0.6,
       preload: true,
       loop: true,
