@@ -86,8 +86,8 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 backdrop-blur-lg transition-all duration-300 ${isDarkSection
-          ? 'bg-black/20 border-b border-white/5'
-          : 'bg-white/80 border-b border-gray-200 shadow-sm'
+        ? 'bg-black/20 border-b border-white/5'
+        : 'bg-white/80 border-b border-gray-200 shadow-sm'
         }`}
     >
       <div className="max-w-7xl mx-auto px-8 lg:px-12">
@@ -212,7 +212,7 @@ export default function Navbar() {
             {/* Text with festive glow and styled ē */}
             <div className="flex flex-col justify-center relative h-20">
               <motion.div
-                className="text-2xl font-semibold relative leading-tight"
+                className="text-2xl font-semibold relative leading-tight tracking-wider"
                 animate={{
                   filter: [
                     'drop-shadow(0 0 5px rgba(255, 215, 0, 0.3))',
@@ -256,12 +256,15 @@ export default function Navbar() {
                 ))}
               </motion.div>
 
-              {/* Technologies subtitle */}
-              <span className={`text-xs font-medium tracking-[0.25em] uppercase ${isDarkSection ? 'text-gray-400' : 'text-gray-600'
-                }`}>
+              {/* Technologies subtitle with smaller size */}
+              <span
+                className={`text-[10px] font-medium tracking-[0.23em] uppercase ${isDarkSection ? 'text-gray-400' : 'text-gray-600'}`}
+                style={{ marginRight: '-0.48em' }}
+              >
                 TECHNOLOGIES
               </span>
             </div>
+
           </div>
 
 
@@ -338,8 +341,8 @@ export default function Navbar() {
             {/* Small Dropdown Menu */}
             <div
               className={`absolute top-full right-0 mt-4 w-56 backdrop-blur-lg bg-gradient-to-br from-slate-900/95 via-blue-950/95 to-slate-900/95 border border-white/10 rounded-2xl shadow-2xl overflow-hidden transition-all duration-300 origin-top-right ${menuOpen
-                  ? 'opacity-100 scale-100 pointer-events-auto'
-                  : 'opacity-0 scale-95 pointer-events-none'
+                ? 'opacity-100 scale-100 pointer-events-auto'
+                : 'opacity-0 scale-95 pointer-events-none'
                 }`}
             >
               <div className="py-3 px-2">
@@ -348,8 +351,8 @@ export default function Navbar() {
                     key={item.id}
                     onClick={() => scrollToSection(item.id)}
                     className={`w-full text-left px-4 py-3 text-sm font-medium text-slate-200 hover:text-white hover:bg-gradient-to-r hover:from-purple-500/20 hover:to-blue-500/20 rounded-lg transition-all duration-200 transform ${menuOpen
-                        ? 'translate-x-0 opacity-100'
-                        : 'translate-x-2 opacity-0'
+                      ? 'translate-x-0 opacity-100'
+                      : 'translate-x-2 opacity-0'
                       }`}
                     style={{
                       transitionDelay: menuOpen ? `${index * 50 + 100}ms` : '0ms',
