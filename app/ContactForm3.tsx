@@ -42,9 +42,9 @@ export default function ContactUsWithMap() {
                     <div className="relative w-full" style={{ height: '500px' }}>
                         {/* World Map Image */}
                         <img
-                            src="https://upload.wikimedia.org/wikipedia/commons/8/83/Equirectangular_projection_SW.jpg"
+                            src="/US.png"
                             alt="World Map"
-                            className="w-full h-full object-cover opacity-20 grayscale"
+                            className="w-full h-full object-fit "
                         />
 
                         {/* Dotted Overlay */}

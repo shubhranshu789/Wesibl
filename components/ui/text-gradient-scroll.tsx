@@ -56,7 +56,7 @@ function TextGradientScroll({ text, className, type = "letter", textOpacity = "s
 
   return (
     <TextGradientScrollContext.Provider value={{ textOpacity, type }}>
-      <p ref={ref} className={cn("relative flex m-0 flex-wrap", className)}>
+      <p ref={ref} className={cn("relative flex m-0 flex-wrap text-justify", className)}>
         {words.map((word, i) => {
           const start = i / words.length
           const end = start + 1 / words.length
@@ -79,12 +79,12 @@ const Word = ({ children, progress, range }: WordType) => {
   const opacity = useTransform(progress, range, [0, 1])
   return (
     <span className="relative me-2 mt-2">
-      <span style={{ position: "absolute", opacity: 0.1 }}>{children}</span>
+      <span className="absolute opacity-10">{children}</span>
       <motion.span
         style={{
           transition: "all .5s",
           opacity: opacity,
-          textShadow: "0 1px 2px rgba(1, 1, 1, 0.5)",
+          textShadow: "0 1px 2px rgba(0, 0, 0, 0.5)",
         }}
       >
         {children}
