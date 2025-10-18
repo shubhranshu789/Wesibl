@@ -10,7 +10,7 @@ import { Howl } from "howler";
 import { useRef } from "react";
 
 const enterSfx = new Howl({
-  src: ["/sounds/track5.mp3", "/sounds/track2.mp3"],
+  src: ["/sounds/EntryReack.mp3", "/sounds/EntryReack.mp3"],
   volume: 0.6,
   preload: true,
 });
@@ -674,7 +674,7 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
             </h1>
 
             <motion.h1
-              className="text-5xl md:text-8xl font-light"
+              className="text-5xl md:text-6xl font-light"
               animate={{
                 backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
               }}
@@ -693,6 +693,7 @@ export default function ClientLayout({ children }: { children: React.ReactNode }
               </span>
               <span className="text-white">SIBL WORLD</span>
             </motion.h1>
+
           </motion.div>
 
 

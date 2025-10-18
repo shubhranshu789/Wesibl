@@ -1,6 +1,9 @@
 import { ReactLenis } from "lenis/dist/lenis-react";
 import { Canvas } from "@react-three/fiber";
 import { Stars } from "@react-three/drei";
+
+// import "../public/vdos/Gif/backround1.gif"
+
 import {
   motion,
   useMotionTemplate,
@@ -139,7 +142,8 @@ const CenterImage = () => {
         clipPath,
         backgroundSize,
         opacity,
-        backgroundImage: "url(https://images.pexels.com/photos/120049/pexels-photo-120049.jpeg)",
+        // backgroundImage: "url(https://images.pexels.com/photos/120049/pexels-photo-120049.jpeg)",
+        backgroundImage: `url("/vdos/Gif/backround1.gif")`,
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         //  backgroundImage
@@ -152,21 +156,22 @@ const ParallaxImages = () => {
   return (
     <div className="mx-auto max-w-5xl px-4 pt-[200px]">
       <ParallaxImg
-        src="https://images.unsplash.com/photo-1677212004257-103cfa6b59d0?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=764"
+        // src="https://images.unsplash.com/photo-1677212004257-103cfa6b59d0?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=764"
+        src="/vdos/Gif/pic2.gif"
         alt="And example of a space launch"
         start={-200}
         end={200}
         className="w-1/3"
       />
       <ParallaxImg
-        src="https://plus.unsplash.com/premium_photo-1726917692594-b9522667414f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170"
+        src="/vdos/Gif/pic4.gif"
         alt="An example of a space launch"
         start={200}
         end={-250}
         className="mx-auto w-2/3"
       />
       <ParallaxImg
-        src="https://images.unsplash.com/photo-1710870509663-16f20f75d758?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1074"
+        src="/vdos/Gif/pic3.gif"
         alt="Orbiting satellite"
         start={-200}
         end={200}

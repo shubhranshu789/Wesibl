@@ -45,9 +45,9 @@ export default function ContactForm({
   templateId = "template_rb70ara",
   publicKey = "TW0MZkqiRtXpFp76Z"
 }: ContactUsProps) {
-  const formRef = useRef<HTMLFormElement>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [success, setSuccess] = useState(false);
+  const formRef = useRef<HTMLFormElement>(null);
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();

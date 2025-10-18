@@ -16,7 +16,7 @@ import Chatbot from "../components/chatbot"
 // import TestimonialsCarousel from "@/components/testimonials-carousel"
 import TestimonialsCarousel from "./TestimonialSection3"
 
-import ContactForm from "../app/ContactForm"
+import ContactForm from "../app/ContactForm3"
 
 
 import Navbar from "./Navbar"
