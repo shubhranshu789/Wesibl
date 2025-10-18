@@ -69,8 +69,8 @@ const TestimonialSection: React.FC = () => {
   return (
     <section className="testimonial-section">
       <div className="container">
-        <h2 className="section-title">Trusted Partners!</h2>
-        <p className="section-subtitle">Trusted Performance!</p>
+        <h2 className="section-title">Trusted Partners! Trusted Performance!</h2>
+        {/* <p className="section-subtitle">Trusted Performance!</p> */}
 
         <div className="carousel-wrapper">
           {/* Left navigation button */}

@@ -16,7 +16,7 @@ import Chatbot from "../components/chatbot"
 // import TestimonialsCarousel from "@/components/testimonials-carousel"
 import TestimonialsCarousel from "./TestimonialSection3"
 
-import ContactForm from "../app/ContactForm3"
+import ContactForm from "../app/ContactForm4"
 
 
 import Navbar from "./Navbar"
@@ -29,36 +29,36 @@ export default function Page() {
   const timelineEntries = [
     {
       id: 1,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-RJ3iTXUn5SUexF6nHMZYhMoQLNCboK.png",
+      image: "/timeline/Seed of an Idea.jpg",
       alt: "Woman runner in artistic motion blur",
-      title: "Idea start",
+      title: "Seed of an Idea",
       description:
         "In 2018, a spark of inspiration ignited — the beginning of our vision to redefine imagination, creativity, and security. What started as a simple idea soon evolved into a mission to turn dreams into reality and build a safer, stronger future together.",
       layout: "left" as const,
     },
     {
       id: 2,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-LN9OPh9hw0b9rwSPRSslHoejcfoKHe.png",
+      image: "/timeline/Roots of planning.jpg",
       alt: "Male runner with determination and focus",
-      title: "The Idea Took Shape",
+      title: "Roots of planning",
       description:
         "By 2023, our vision found clarity and purpose. The idea that once sparked in imagination was refined, structured, and brought to life — marking the moment our dream transformed into a defined mission for innovation, collaboration, and security.",
       layout: "right" as const,
     },
     {
       id: 3,
-      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-1FdGyjVpWQANGzsDWpoPIvF5SVI2za.png",
+      image: "/timeline/Growth in Action.png",
       alt: "Runner in dynamic motion showing strength and grace",
-      title: "The Blueprint Was Ready",
+      title: "Growth in Action",
       description:
         "In 2024, our concept evolved into a concrete plan. With every detail mapped out, the blueprint laid the foundation for turning our vision into action — guiding us toward innovation, strength, and a secure future.",
       layout: "left" as const,
     },
     {
       id: 4,
-      image: "https://images.unsplash.com/photo-1723664150982-ff23e5f1deb8?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170",
+      image: "/timeline/Bloom into Reality.png",
       alt: "Runner in dynamic motion showing strength and grace",
-      title: "The Vision Came to Life",
+      title: "Bloom into Reality",
       description:
         "In 2025, we turned plans into action. With dedication and purpose, our work officially began — transforming ideas and blueprints into real impact, marking the start of a new chapter in innovation and security.",
       layout: "right" as const,
