@@ -10,9 +10,12 @@ import { AnimatePresence, motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 
 export const metadata: Metadata = {
-  title: "v0 App",
+  title: "Wesibl",
   description: "Created with v0",
   generator: "v0.app",
+  icons: {
+    icon: '/logo.png',
+  },
 };
 
 export default function RootLayout({
