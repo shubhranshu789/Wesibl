@@ -143,7 +143,7 @@ const CenterImage = () => {
         backgroundSize,
         opacity,
         // backgroundImage: "url(https://images.pexels.com/photos/120049/pexels-photo-120049.jpeg)",
-        backgroundImage: `url("/vdos/Gif/backround1.gif")`,
+        backgroundImage: `url("/vdos/Gif/pic6.gif")`,
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         //  backgroundImage
@@ -178,7 +178,7 @@ const ParallaxImages = () => {
         className="ml-auto w-1/3"
       />
       <ParallaxImg
-        src="/vdos/Gif/pic5.gif"
+        src="/vdos/Gif/pic7.gif"
         alt="Orbiting satellite"
         start={0}
         end={-500}

@@ -43,7 +43,7 @@ const testimonials: Testimonial[] = [
     content: "It’s a pleasure to support such a forward-thinking team. Their collaborative approach and clear understanding of Google Cloud capabilities make them an invaluable partner in driving customer success.",
     image: "/testimonial/google.png?img=4"
   },
-  
+
 ];
 
 const TestimonialSection: React.FC = () => {
@@ -54,7 +54,7 @@ const TestimonialSection: React.FC = () => {
   };
 
   const prevTestimonial = () => {
-    setCurrentIndex((prevIndex) => 
+    setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
     );
   };
@@ -69,7 +69,13 @@ const TestimonialSection: React.FC = () => {
   return (
     <section className="testimonial-section">
       <div className="container">
-        <h2 className="section-title">Trusted Partners! Trusted Performance!</h2>
+        <h2 className="section-title">
+          <span className="font-bold">Trusted</span> <span className="font-normal">Partners!</span>
+        </h2>
+        <h2 className="section-title">
+          <span className="font-bold">Trusted</span> <span className="font-normal">Performance!</span>
+        </h2>
+        {/* <h2 className="section-title"> Trusted Performance!</h2> */}
         {/* <p className="section-subtitle">Trusted Performance!</p> */}
 
         <div className="carousel-wrapper">

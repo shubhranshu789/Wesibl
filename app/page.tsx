@@ -47,7 +47,7 @@ export default function Page() {
     },
     {
       id: 3,
-      image: "/timeline/Growth in Action.png",
+      image: "/timeline/pic99.jpg",
       alt: "Runner in dynamic motion showing strength and grace",
       title: "Growth in Action",
       description:
@@ -108,10 +108,10 @@ export default function Page() {
           <div className="container mx-auto px-6 mb-16">
             <div className="text-center">
               <h2 className="text-4xl md:text-6xl font-black tracking-wider mb-6 bg-gradient-to-r from-[#e91e8c] to-[#5b4bff] bg-clip-text text-transparent">
-                ALL RUNNERS WELCOME
+                How It All Started
               </h2>
               <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto">
-                Every runner has a unique journey. Here are just a few stories from our inclusive community.
+                It all started with a vision to use technology to make life simpler, smarter, and more connected
               </p>
             </div>
           </div>

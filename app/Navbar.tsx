@@ -258,7 +258,7 @@ export default function Navbar() {
 
               {/* Technologies subtitle with smaller size */}
               <span
-                className={`text-[10px] font-medium tracking-[0.23em] uppercase ${isDarkSection ? 'text-gray-400' : 'text-gray-600'}`}
+                className={`text-[10px] font-medium tracking-[0.20em] uppercase ${isDarkSection ? 'text-gray-400' : 'text-gray-600'}`}
                 style={{ marginRight: '-0.48em' }}
               >
                 TECHNOLOGIES
