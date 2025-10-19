@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa';
+import { FaInstagram, FaTwitter, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
 export default function Footer() {
@@ -108,11 +108,13 @@ export default function Footer() {
                         <a href="http://instagram.com/wesibltechnologies" className="text-white hover:text-purple-500 transition-colors">
                             <FaInstagram size={24} />
                         </a>
-                        {/* <a href="#" className="text-white hover:text-purple-500 transition-colors">
-                            <FaTwitter size={24} />
-                        </a> */}
+
                         <a href="https://www.linkedin.com/company/wesibltechnologies" className="text-white hover:text-purple-500 transition-colors">
                             <FaLinkedin size={24} />
+                        </a>
+
+                        <a href="mailto:hello@wesibl.com" className="text-white hover:text-purple-500 transition-colors">
+                            <FaEnvelope size={24} />
                         </a>
                     </div>
 
@@ -128,19 +130,32 @@ export default function Footer() {
                 <div className="flex flex-col">
                     <nav className="space-y-6">
                         <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
-                            <a onClick={() => window.scrollTo({ top: 10, behavior: 'smooth' })} href="#" className="block text-white hover:text-purple-300 transition-colors text-4xl">
+                            <a
+                                onClick={() => window.scrollTo({ top: 10, behavior: 'smooth' })}
+                                className="block text-white hover:bg-gradient-to-r hover:from-purple-400 hover:via-pink-500 hover:to-purple-600 hover:bg-clip-text hover:text-transparent transition-all duration-300 text-4xl cursor-pointer"
+                            >
                                 Home
                             </a>
-                            <a onClick={() => scrollToSection("community")} href="#" className="block text-white hover:text-purple-400 transition-colors text-4xl">
-                                Who We Are
+                            <a
+                                onClick={() => scrollToSection("intro")}
+                                className="block text-white hover:bg-gradient-to-r hover:from-purple-400 hover:via-pink-500 hover:to-purple-600 hover:bg-clip-text hover:text-transparent transition-all duration-300 text-4xl cursor-pointer"
+                            >
+                                Our Mission
                             </a>
-                            <a onClick={() => scrollToSection("intro")} href="#" className="block text-white hover:text-purple-400 transition-colors text-4xl">
-                                Services
+                            <a
+                                onClick={() => scrollToSection("community")}
+                                className="block text-white hover:bg-gradient-to-r hover:from-purple-400 hover:via-pink-500 hover:to-purple-600 hover:bg-clip-text hover:text-transparent transition-all duration-300 text-4xl cursor-pointer"
+                            >
+                                Our Journey
                             </a>
-                            <a onClick={() => scrollToSection("intro")} href="#" className="block text-white hover:text-purple-400 transition-colors text-4xl">
-                                Contact Us
+                            <a
+                                onClick={() => scrollToSection("testimonial")}
+                                className="block text-white hover:bg-gradient-to-r hover:from-purple-400 hover:via-pink-500 hover:to-purple-600 hover:bg-clip-text hover:text-transparent transition-all duration-300 text-4xl cursor-pointer"
+                            >
+                                Testimonials
                             </a>
                         </div>
+
 
                         <div style={{ marginTop: "120px" }}>
                             <h3 className="text-white font-semibold mb-3">India</h3>
@@ -158,19 +173,32 @@ export default function Footer() {
                 <div className="flex flex-col">
                     {/* Legal Links */}
                     <div className="mb-12">
-                        <a href="#" className="block text-gray-400 hover:text-white transition-colors mb-3">
+                        <a
+                            href="#"
+                            className="block text-gray-400 hover:bg-gradient-to-r hover:from-purple-400 hover:via-pink-500 hover:to-purple-600 hover:bg-clip-text hover:text-transparent transition-all duration-300 mb-3"
+                        >
                             Privacy Policy
                         </a>
-                        <a href="#" className="block text-gray-400 hover:text-white transition-colors mb-3">
+                        <a
+                            href="#"
+                            className="block text-gray-400 hover:bg-gradient-to-r hover:from-purple-400 hover:via-pink-500 hover:to-purple-600 hover:bg-clip-text hover:text-transparent transition-all duration-300 mb-3"
+                        >
                             Terms and conditions
                         </a>
-                        <a href="#" className="block text-gray-400 hover:text-white transition-colors mb-3">
+                        <a
+                            href="#"
+                            className="block text-gray-400 hover:bg-gradient-to-r hover:from-purple-400 hover:via-pink-500 hover:to-purple-600 hover:bg-clip-text hover:text-transparent transition-all duration-300 mb-3"
+                        >
                             Cookie Policy
                         </a>
-                        <a href="#" className="block text-gray-400 hover:text-white transition-colors">
+                        <a
+                            href="#"
+                            className="block text-gray-400 hover:bg-gradient-to-r hover:from-purple-400 hover:via-pink-500 hover:to-purple-600 hover:bg-clip-text hover:text-transparent transition-all duration-300"
+                        >
                             Careers
                         </a>
                     </div>
+
 
                     {/* Locations */}
                     <div className="space-y-8">
@@ -189,13 +217,13 @@ export default function Footer() {
             </div>
 
             {/* Scroll to Top Button */}
-            <button
+            {/* <button
                 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                 className="fixed bottom-8 right-8 text-white hover:text-purple-400 transition-colors text-sm tracking-widest"
                 style={{ writingMode: 'vertical-rl', textOrientation: 'mixed' }}
             >
                 BACK TO TOP
-            </button>
+            </button> */}
         </footer>
     );
 }
