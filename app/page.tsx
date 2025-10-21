@@ -24,7 +24,7 @@ import Navbar from "./Navbar"
 
 export default function Page() {
   const missionStatement =
-    "At Wadada Run Club, we believe movement isn't an option, it's a lifestyle. Born from the vibrant spirit of Jamaica, we unite runners from every corner of the globe who share our passion for pushing boundaries. Whether you're chasing sunrise through Kingston streets or conquering mountain trails, we're here to fuel your journey. Our community thrives on the rhythm of footsteps, the power of perseverance, and the joy of shared victories. Join us as we run not just for fitness, but for freedom, friendship, and the pure love of movement."
+    "Our mission is to empower businesses through technology-driven innovation. At Wesibl Technologies, we design and deliver next-generation software products that simplify complexity, enhance performance, and create real-world impact. Every product we develop begins with a clear purpose — to make processes smarter, decisions faster, and experiences seamless. We are deeply committed to understanding our clients’ goals and aligning our solutions with their vision to deliver measurable value and sustainable success. Our approach is grounded in innovation, quality, and integrity, ensuring that every product we build contributes to long-term growth and digital transformation. Beyond technology, our mission is to empower people, transform industries, and drive the future of digital excellence."
 
   const timelineEntries = [
     {
